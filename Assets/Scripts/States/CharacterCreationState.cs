@@ -37,25 +37,12 @@ namespace JoyLib.Code.States
                 "Scenes/UI/Character Creation Part 1.tscn");
 
             this.Node = scene.Instance();
-            //GlobalConstants.GameManager.MyNode.GetTree().Root.AddChild(this.Node);
             
             GlobalConstants.GameManager.GUIManager.InstantiateUIScene(scene);
             ICulture culture = GlobalConstants.GameManager.Roller.SelectFromCollection(GlobalConstants.GameManager.CultureHandler.Values);
-            /*this.GUIManager.SetUIColours(
-                culture.BackgroundColours,
-                culture.CursorColours,
-                culture.FontColours);
-            */
+            base.SetUpUi();
 
-            var children = this.Node.GetAllChildren();
-            foreach (var child in children)
-            {
-                if (child is ManagedUIElement element)
-                {
-                    element.AddSpriteState(GlobalConstants.GameManager.GUIManager.UISprites["DefaultWindow"]);
-                }
-            }
-            //base.SetUpUi();
+            this.GUIManager.OpenGUI(GUINames.CHARACTER_CREATION_PART_1);
 
             /*
             this.CharacterCreationScreen = this.GUIManager

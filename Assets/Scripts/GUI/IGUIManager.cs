@@ -13,7 +13,7 @@ namespace JoyLib.Code.Unity.GUI
 
         void ToggleGUI(string name);
 
-        void SetupManagedComponents(GUIData gui, bool crossFade = false, float duration = 0.1f);
+        void SetupManagedComponents(Node gui, bool crossFade = false, float duration = 0.1f);
 
         void SetUIColours(IDictionary<string, IDictionary<string, Color>> background,
             IDictionary<string, IDictionary<string, Color>> cursor,

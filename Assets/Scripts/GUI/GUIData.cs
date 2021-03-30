@@ -1,6 +1,7 @@
 ﻿using Godot;
 using Godot.Collections;
 using JoyLib.Code.Events;
+using JoyLib.Code.Helpers;
 
 namespace JoyLib.Code.Unity.GUI
 {
@@ -39,12 +40,12 @@ namespace JoyLib.Code.Unity.GUI
         public virtual void Display()
         {
             this.Visible = true;
-            Array children = this.GetChildren();
+            Array children = this.GetAllChildren();
             foreach (var child in children)
             {
-                if (child is GUIData data)
+                if (child is CanvasItem data)
                 {
-                    data.Show();
+                    data.Visible = true;
                 }
             }
 

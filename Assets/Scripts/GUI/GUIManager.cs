@@ -348,11 +348,16 @@ namespace JoyLib.Code.Unity.GUI
             }
         }
 
-        public void SetupManagedComponents(GUIData gui, bool crossFade = false, float duration = 0.1f)
+        public void SetupManagedComponents(Node gui, bool crossFade = false, float duration = 0.1f)
         {
-            Array managedComponents = gui.GetAllChildren();
+            Array managedComponents = gui.GetChildren();
             foreach (var component in managedComponents)
             {
+                if (component is Node node)
+                {
+                    this.SetupManagedComponents(node, crossFade, duration);
+                }
+                
                 if (!(component is IManagedElement managedElement))
                 {
                     continue;
@@ -488,7 +493,7 @@ namespace JoyLib.Code.Unity.GUI
                 }
             }
 
-            toOpen.Show();
+            toOpen.Display();
 
             this.ActiveGUIs.Add(toOpen);
 
