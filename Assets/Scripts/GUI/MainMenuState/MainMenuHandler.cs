@@ -18,11 +18,10 @@ namespace JoyLib.Code.Unity.GUI.MainMenuState
 
             ISpriteState state = GlobalConstants.GameManager.GUIManager.UISprites["DefaultWindow"];
             
-            //background.AddSpriteState(state);
-            
             this.AddChild(background);
             this.MoveChild(background, 0);
             
+            //background.AddSpriteState(state);
             GlobalConstants.GameManager.GUIManager.SetupManagedComponents(this);
         }
 
