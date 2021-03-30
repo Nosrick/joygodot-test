@@ -22,7 +22,6 @@ __meta__ = {
 }
 
 [node name="Background" parent="." instance=ExtResource( 1 )]
-visible = false
 ElementName = "DefaultWindow"
 
 [node name="Button Container" type="VBoxContainer" parent="."]
