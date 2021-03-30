@@ -1,0 +1,280 @@
+﻿{
+  "Cultures": [
+    {
+      "CultureName": "slime conglomerate",
+      "Inhabitants": [
+        "slime"
+      ],
+      "Rulers": [
+        "great slime"
+      ],
+      "Crimes": [],
+      "TileSet": {
+        "Name": "slime conglomerate",
+        "SpriteData": [
+          {
+            "Name": "slime",
+            "State": "idle",
+            "Part": [
+              {
+                "Name": "body-light",
+                "Frames": 3,
+                "Filename": "cultures/slime-light-body.png",
+                "Data": ["default"],
+                "SortOrder": 0,
+                "Position": 0,
+                "Colour": [
+                  "#8fd3ff",
+                  "#a884f3"
+                ]
+              },
+              {
+                "Name": "body-dark",
+                "Frames": 3,
+                "Filename": "cultures/slime-dark-body.png",
+                "Data": ["default"],
+                "SortOrder": 1,
+                "Position": 0,
+                "Colour": [
+                  "#905ea9",
+                  "#4d65b4"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "Sexualities": [
+        {
+          "Name": "pansexual",
+          "Chance": 95
+        },
+        {
+          "Name": "asexual",
+          "Chance": 5
+        }
+      ],
+      "Romances": [
+        {
+          "Name": "aromantic",
+          "Chance": 100
+        }
+      ],
+      "Sexes": [
+        {
+          "Name": "neutral",
+          "Chance": 100
+        }
+      ],
+      "Genders": [
+        {
+          "Name": "neutral",
+          "Chance": 100
+        }
+      ],
+      "NonConformingGenderChance": 0,
+      "Jobs": [
+        {
+          "Name": "warrior",
+          "Chance": 10
+        }
+      ],
+      "Relationships": [
+        "polyamorous"
+      ],
+      "Statistics": [],
+      "Names": [
+        {
+          "Name": "Glorp",
+          "Gender": [
+            "all"
+          ],
+          "Chain": [
+            0
+          ]
+        },
+        {
+          "Name": "Blip",
+          "Gender": [
+            "all"
+          ],
+          "Chain": [
+            0
+          ]
+        },
+        {
+          "Name": "Slorp",
+          "Gender": [
+            "all"
+          ],
+          "Chain": [
+            0
+          ]
+        },
+        {
+          "Name": "Glurg",
+          "Gender": [
+            "all"
+          ],
+          "Chain": [
+            0
+          ]
+        },
+        {
+          "Name": "The",
+          "Gender": [
+            "all"
+          ],
+          "Chain": [
+            1
+          ]
+        },
+        {
+          "Name": "Von",
+          "Gender": [
+            "all"
+          ],
+          "Chain": [
+            1
+          ]
+        },
+        {
+          "Name": "Slimy",
+          "Gender": [
+            "all"
+          ],
+          "Chain": [
+            2
+          ]
+        }
+      ],
+      "UIColours": {
+        "CursorColours": [
+          {
+            "Name": "DefaultCursor",
+            "Colour": [
+              {
+                "Name": "CursorHighlight",
+                "Value": "#4d65b4"
+              },
+              {
+                "Name": "CursorBright",
+                "Value": "#4d65b4"
+              },
+              {
+                "Name": "CursorMid",
+                "Value": "#4d65b4"
+              },
+              {
+                "Name": "CursorDark",
+                "Value": "#4d65b4"
+              },
+              {
+                "Name": "CursorOutline",
+                "Value": "#8fd3ff"
+              }
+            ]
+          }
+        ],
+        "BackgroundColours": [
+          {
+            "Name": "DefaultWindow",
+            "Colour": [
+              {
+                "Name": "background",
+                "Value": "#4d65b4"
+              },
+              {
+                "Name": "border",
+                "Value": "#8fd3ff"
+              }
+            ]
+          },
+          {
+            "Name": "SlotSprite",
+            "Colour": [
+              {
+                "Name": "background",
+                "Value": "#8fd3ff"
+              },
+              {
+                "Name": "border",
+                "Value": "#4d65b4"
+              }
+            ]
+          },
+          {
+            "Name": "AccentBackground",
+            "Colour": [{
+              "Name": "background",
+              "Value": "#8fd3ff"
+            }]
+          },
+          {
+            "Name": "SecondaryAccent",
+            "Colour": [{
+              "Name": "background",
+              "Value": "#4d65b4"
+            }]
+          },
+          {
+            "Name": "IconBackground",
+            "Colour": [{
+              "Name": "background",
+              "Value": "#4d65b4"
+            }]
+          },
+          {
+            "Name": "CharacterSheetIcon",
+            "Colour": [{
+              "Name": "icon",
+              "Value": "#8fd3ff"
+            }]
+          },
+          {
+            "Name": "InventoryIcon",
+            "Colour": [{
+              "Name": "icon",
+              "Value": "#8fd3ff"
+            }]
+          },
+          {
+            "Name": "EquipmentIcon",
+            "Colour": [{
+              "Name": "icon",
+              "Value": "#8fd3ff"
+            }]
+          },
+          {
+            "Name": "JobManagementIcon",
+            "Colour": [{
+              "Name": "icon",
+              "Value": "#8fd3ff"
+            }]
+          },
+          {
+            "Name": "QuestJournalIcon",
+            "Colour": [{
+              "Name": "icon",
+              "Value": "#8fd3ff"
+            }]
+          }
+        ],
+        "FontColours": [
+          {
+            "Name": "Font",
+            "Value": "#3e3546"
+          },
+          {
+            "Name": "AccentFont",
+            "Value": "#3e3546"
+          },
+          {
+            "Name": "TitleFont",
+            "Value": "#3e3546"
+          }
+        ]
+      }
+    }
+  ]
+}

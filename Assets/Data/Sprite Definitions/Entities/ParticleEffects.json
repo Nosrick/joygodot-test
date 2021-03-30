@@ -1,0 +1,23 @@
+﻿{
+  "TileSet": {
+    "Name": "Particles",
+    "SpriteData": [
+      {
+        "Name": "AttackParticle",
+        "Part": [
+          {
+            "Name": "AttackParticle",
+            "Frames": 1,
+            "Filename": "attack-particle.png",
+            "Data": [
+              "default",
+              "attack"
+            ],
+            "Position": 0,
+            "SortOrder": 2
+          }
+        ]
+      }
+    ]
+  }
+}

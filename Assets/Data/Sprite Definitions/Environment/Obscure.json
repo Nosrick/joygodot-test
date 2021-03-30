@@ -1,0 +1,21 @@
+﻿{
+  "TileSet": {
+    "Name": "obscure",
+    "SpriteData": [
+      {
+        "Name": "obscure",
+        "Part": [
+          {
+            "Name": "obscure",
+            "Frames": 1,
+            "Filename": "obscure.png",
+            "Data": [
+              "default"
+            ],
+            "Position": 0
+          }
+        ]
+      }
+    ]
+  }
+}
