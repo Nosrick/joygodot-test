@@ -33,9 +33,9 @@ namespace JoyLib.Code.States
                 "Scenes/UI/Character Creation Part 1.tscn");
 
             this.Node = scene.Instance();
-            GlobalConstants.GameManager.MyNode.GetTree().Root.AddChild(this.Node);
+            //GlobalConstants.GameManager.MyNode.GetTree().Root.AddChild(this.Node);
             
-            //GlobalConstants.GameManager.GUIManager.InstantiateUIScene(scene);
+            GlobalConstants.GameManager.GUIManager.InstantiateUIScene(scene);
             ICulture culture = GlobalConstants.GameManager.Roller.SelectFromCollection(GlobalConstants.GameManager.CultureHandler.Values);
             /*this.GUIManager.SetUIColours(
                 culture.BackgroundColours,

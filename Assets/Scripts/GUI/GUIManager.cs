@@ -298,20 +298,16 @@ namespace JoyLib.Code.Unity.GUI
 
         public void InstantiateUIScene(PackedScene ui)
         {
-            Array children = this.RootUI.GetChildren();
-            if (children.IsNullOrEmpty() == false)
+            while(this.RootUI.GetChildCount() > 0)
             {
-                for(int i = 0; i < children.Count; i++)
-                {
-                    this.RootUI.RemoveChild(this.RootUI.GetChild(0));
-                }
+                var child = this.RootUI.GetChild(0);
+                child.QueueFree();
+                this.RootUI.RemoveChild(child);
             }
             Control newUI = (Control) ui.Instance();
             newUI.AnchorBottom = 1;
             newUI.AnchorRight = 1;
             this.RootUI.AddChild(newUI);
-            children = newUI.GetChildren();
-            GlobalConstants.ActionLog.Log(children);
         }
 
         public bool Add(GUIData gui)

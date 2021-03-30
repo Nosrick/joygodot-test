@@ -14,12 +14,10 @@ namespace JoyLib.Code.States
 
         public virtual void SetUpUi()
         {
-            //Thread.Sleep(200);
-
             this.GUIManager.Clear();
             this.GUIManager.FindGUIs();
 
-            this.GUIManager.CloseAllOtherGUIs(GUINames.CURSOR);
+            //this.GUIManager.CloseAllOtherGUIs(GUINames.CURSOR);
         }
 
         public abstract void Start();
