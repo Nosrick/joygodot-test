@@ -1,5 +1,8 @@
-﻿using Godot;
+﻿using System.Linq;
+using Godot;
+using JoyGodot.Assets.Scripts.GUI.Managed_Assets;
 using JoyLib.Code.Cultures;
+using JoyLib.Code.Helpers;
 using JoyLib.Code.Unity.GUI;
 
 namespace JoyLib.Code.States
@@ -28,6 +31,7 @@ namespace JoyLib.Code.States
 
         public override void SetUpUi()
         {
+            GlobalConstants.ActionLog.Log("CHARACTER CREATION SCREEN");
             PackedScene scene = GD.Load<PackedScene>(
                 GlobalConstants.GODOT_ASSETS_FOLDER +
                 "Scenes/UI/Character Creation Part 1.tscn");
@@ -43,8 +47,15 @@ namespace JoyLib.Code.States
                 culture.FontColours);
             */
 
-
-            base.SetUpUi();
+            var children = this.Node.GetAllChildren();
+            foreach (var child in children)
+            {
+                if (child is ManagedUIElement element)
+                {
+                    element.AddSpriteState(GlobalConstants.GameManager.GUIManager.UISprites["DefaultWindow"]);
+                }
+            }
+            //base.SetUpUi();
 
             /*
             this.CharacterCreationScreen = this.GUIManager

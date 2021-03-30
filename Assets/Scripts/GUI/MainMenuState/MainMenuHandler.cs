@@ -15,7 +15,7 @@ namespace JoyLib.Code.Unity.GUI.MainMenuState
                 ElementName = "DefaultWindow"
             };
 
-            ISpriteState state = GlobalConstants.GameManager.GUIManager.UISprites["DefaultWindow"];
+            //ISpriteState state = GlobalConstants.GameManager.GUIManager.UISprites["DefaultWindow"];
             
             this.AddChild(background);
             this.MoveChild(background, 0);

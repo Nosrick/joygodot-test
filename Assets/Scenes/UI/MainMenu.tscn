@@ -93,8 +93,8 @@ ElementName = "SlotSprite"
 [node name="Text" parent="Button Container/Quit to Desktop" index="0"]
 custom_fonts/font = SubResource( 1 )
 text = "Quit to Desktop"
-[connection signal="pressed" from="Button Container/New Game Button" to="." method="NewGame"]
 [connection signal="pressed" from="Button Container/New Game Button" to="Button Container/New Game Button" method="OnPointerDown"]
+[connection signal="pressed" from="Button Container/New Game Button" to="." method="NewGame"]
 [connection signal="pressed" from="Button Container/Load Game Button" to="Button Container/Load Game Button" method="OnPointerDown"]
 [connection signal="pressed" from="Button Container/Settings" to="Button Container/Settings" method="OnPointerDown"]
 [connection signal="pressed" from="Button Container/Quit to Desktop" to="Button Container/Quit to Desktop" method="OnPointerDown"]

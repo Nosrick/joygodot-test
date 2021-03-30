@@ -301,8 +301,8 @@ namespace JoyLib.Code.Unity.GUI
             while(this.RootUI.GetChildCount() > 0)
             {
                 var child = this.RootUI.GetChild(0);
-                child.QueueFree();
                 this.RootUI.RemoveChild(child);
+                child.QueueFree();
             }
             Control newUI = (Control) ui.Instance();
             newUI.AnchorBottom = 1;

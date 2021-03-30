@@ -369,8 +369,11 @@ namespace JoyGodot.Assets.Scripts.GUI.Managed_Assets
                 patchRect.AxisStretchVertical = part.m_StretchMode;
                 patchRect.SizeFlagsHorizontal = 3;
                 patchRect.SizeFlagsVertical = 3;
-                GlobalConstants.ActionLog.Log(patchRect);
             }
+            
+            GlobalConstants.ActionLog.Log("MY NAME: " + this.Name);
+            GlobalConstants.ActionLog.Log("MY CHILDREN: ");
+            GlobalConstants.ActionLog.Log(this.GetChildren());
         }
 
         protected virtual void ColourLerp(
