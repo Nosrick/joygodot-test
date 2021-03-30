@@ -44,7 +44,7 @@ namespace JoyLib.Code.States
             */
 
 
-            //base.SetUpUi();
+            base.SetUpUi();
 
             /*
             this.CharacterCreationScreen = this.GUIManager

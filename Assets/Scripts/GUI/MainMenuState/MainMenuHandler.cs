@@ -1,5 +1,4 @@
-﻿using System.Linq;
-using JoyGodot.Assets.Scripts.GUI.Managed_Assets;
+﻿using JoyGodot.Assets.Scripts.GUI.Managed_Assets;
 using JoyLib.Code.Graphics;
 using JoyLib.Code.States;
 
@@ -22,7 +21,7 @@ namespace JoyLib.Code.Unity.GUI.MainMenuState
             this.MoveChild(background, 0);
             
             //background.AddSpriteState(state);
-            GlobalConstants.GameManager.GUIManager.SetupManagedComponents(this);
+            //GlobalConstants.GameManager.GUIManager.SetupManagedComponents(this);
         }
 
         public void NewGame()

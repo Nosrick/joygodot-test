@@ -73,8 +73,8 @@ namespace JoyLib.Code.Unity.GUI
 
         public override void _Ready()
         {
-            this.GUIManager = GlobalConstants.GameManager.GUIManager;
-            this.GUIManager.Add(this);
+            //this.GUIManager = GlobalConstants.GameManager.GUIManager;
+            //this.GUIManager.Add(this);
         }
 
         public virtual void ButtonClose()

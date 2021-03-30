@@ -20,17 +20,17 @@ namespace JoyLib.Code.States
 
         public override void SetUpUi()
         {
-            GlobalConstants.GameManager.GUIManager.InstantiateUIScene(
-                GD.Load<PackedScene>(
-                    GlobalConstants.GODOT_ASSETS_FOLDER +
-                    "Scenes/UI/MainMenu.tscn"));
-            
             ICulture[] cultures = GlobalConstants.GameManager.CultureHandler.Cultures.ToArray();
             ICulture randomCulture = GlobalConstants.GameManager.Roller.SelectFromCollection(cultures);
             this.GUIManager.SetUIColours(
                 randomCulture.BackgroundColours,
                 randomCulture.CursorColours,
                 randomCulture.FontColours);
+            
+            GlobalConstants.GameManager.GUIManager.InstantiateUIScene(
+                GD.Load<PackedScene>(
+                    GlobalConstants.GODOT_ASSETS_FOLDER +
+                    "Scenes/UI/MainMenu.tscn"));
             base.SetUpUi();
             this.GUIManager.OpenGUI(GUINames.MAIN_MENU);
         }

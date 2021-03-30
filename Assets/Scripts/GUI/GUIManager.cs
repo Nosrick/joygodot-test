@@ -367,31 +367,7 @@ namespace JoyLib.Code.Unity.GUI
                     continue;
                 }
                 
-                if (component is ManagedFonts fonts)
-                {
-                    if (this.Themes.TryGetValue(fonts.ElementName, out Theme value))
-                    {
-                        fonts.SetTheme(value);
-                    }
-                    else
-                    {
-                        GlobalConstants.ActionLog.Log("Could not find font theme " + fonts.ElementName,
-                            LogLevel.Warning);
-                    }
-                }
-                else if (component is ManagedSprite managedSprite)
-                {
-                    if (this.Themes.TryGetValue(managedSprite.ElementName, out Theme value))
-                    {
-                        managedSprite.SetTheme(value);
-                    }
-                    else
-                    {
-                        GlobalConstants.ActionLog.Log("Could not find sprite " + managedSprite.ElementName,
-                            LogLevel.Warning);
-                    }
-                }
-                else if (component is ManagedUIElement managedUiElement)
+                if (component is ManagedUIElement managedUiElement)
                 {
                     bool result = this.UISprites.TryGetValue(managedUiElement.ElementName, out ISpriteState state);
                     if (result)

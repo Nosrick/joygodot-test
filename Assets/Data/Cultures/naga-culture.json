@@ -22,44 +22,6 @@
       "TileSet": {
         "Name": "naga imperium",
         "SpriteData": [
-          {
-            "Name": "naga",
-            "State": "idle",
-            "Part": [
-              {
-                "Name": "body-light",
-                "Frames": 3,
-                "Filename": "cultures/naga-light-body.png",
-                "SortOrder": 0,
-                "Data": ["default"],
-                "Colour": ["#fb6b1d"]
-              },
-              {
-                "Name": "body-dark",
-                "Frames": 3,
-                "Filename": "cultures/naga-dark-body.png",
-                "SortOrder": 1,
-                "Data": ["default"],
-                "Colour": ["#fb6b1d"]
-              },
-              {
-                "Name": "eyes",
-                "Frames": 3,
-                "Filename": "cultures/naga-eyes.png",
-                "SortOrder": 2,
-                "Data": ["default"],
-                "Colour": ["#3e3546"]
-              },
-              {
-                "Name": "tongue",
-                "Frames": 3,
-                "Filename": "cultures/naga-tongue.png",
-                "SortOrder": 3,
-                "Data": ["default"],
-                "Colour": ["#c32454"]
-              }
-            ]
-          }
         ]
       },
       "Jobs": [

@@ -159,41 +159,6 @@
       "TileSet": {
         "Name": "human kingdom",
         "SpriteData": [
-          {
-            "Name": "human",
-            "State": "idle",
-            "Part": [
-              {
-                "Name": "body",
-                "Frames": 3,
-                "Filename": "cultures/human-body32.png",
-                "Data": [
-                  "default"
-                ],
-                "Position": 0,
-                "SortOrder": 0,
-                "Colour": [
-                  "#fca790",
-                  "#966c6c"
-                ]
-              },
-              {
-                "Name": "eyes",
-                "Frames": 3,
-                "Filename": "cultures/human-eyes32.png",
-                "Data": [
-                  "default"
-                ],
-                "Position": 0,
-                "SortOrder": 1,
-                "Colour": [
-                  "#1ebc73",
-                  "#4d9be6",
-                  "#9e4539"
-                ]
-              }
-            ]
-          }
         ]
       },
       "UIColours": {
