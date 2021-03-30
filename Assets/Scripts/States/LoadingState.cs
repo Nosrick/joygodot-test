@@ -1,5 +1,6 @@
 ﻿using Godot;
 using JoyLib.Code;
+using JoyLib.Code.Cultures;
 using JoyLib.Code.States;
 using JoyLib.Code.Unity.GUI;
 
@@ -36,6 +37,12 @@ namespace JoyGodot.Assets.Scripts.States
             if (GlobalConstants.GameManager?.Initialised == true)
             {
                 this.Done = true;
+                ICulture culture = GlobalConstants.GameManager.Roller.SelectFromCollection(
+                    GlobalConstants.GameManager.CultureHandler.Values);
+                this.GUIManager.SetUIColours(
+                    culture.BackgroundColours,
+                    culture.CursorColours,
+                    culture.FontColours);
             }
         }
 
@@ -45,8 +52,8 @@ namespace JoyGodot.Assets.Scripts.States
 
         public override GameState GetNextState()
         {
-            //return new CharacterCreationState();
-            return new MainMenuState();
+            return new CharacterCreationState();
+            //return new MainMenuState();
         }
     }
 }

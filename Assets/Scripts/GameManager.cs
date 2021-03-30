@@ -59,6 +59,11 @@ namespace JoyLib.Code
             this.ActionLog.Update();
         }
 
+        public override void _Input(InputEvent @event)
+        {
+            this.m_StateManager?.Process(@event);
+        }
+
         protected void Load()
         {
             this.LoadingMessage = "Initialising action log";

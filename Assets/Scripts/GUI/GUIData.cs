@@ -40,6 +40,7 @@ namespace JoyLib.Code.Unity.GUI
         public virtual void Display()
         {
             this.Visible = true;
+            /*
             Array children = this.GetAllChildren();
             foreach (var child in children)
             {
@@ -48,6 +49,7 @@ namespace JoyLib.Code.Unity.GUI
                     data.Visible = true;
                 }
             }
+            */
 
             this.OnGUIOpen?.Invoke(this);
         }

@@ -20,14 +20,6 @@ namespace JoyLib.Code.States
 
         public override void SetUpUi()
         {
-            ICulture[] cultures = GlobalConstants.GameManager.CultureHandler.Cultures.ToArray();
-            ICulture randomCulture = GlobalConstants.GameManager.Roller.SelectFromCollection(cultures);
-            
-            this.GUIManager.SetUIColours(
-                randomCulture.BackgroundColours,
-                randomCulture.CursorColours,
-                randomCulture.FontColours);
-            
             GlobalConstants.GameManager.GUIManager.InstantiateUIScene(
                 GD.Load<PackedScene>(
                     GlobalConstants.GODOT_ASSETS_FOLDER +
